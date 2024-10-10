@@ -1,0 +1,250 @@
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SocialMesh - Notifications</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+  }
+  .app-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  header {
+    background-color: #4267B2;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  .nav-item {
+    text-decoration: none;
+    color: #4267B2;
+    font-weight: bold;
+  }
+  .nav-item.active {
+    border-bottom: 2px solid #4267B2;
+  }
+  .notifications-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .notification {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s;
+  }
+  .notification:last-child {
+    border-bottom: none;
+  }
+  .notification:hover {
+    background-color: #f7f8fa;
+  }
+  .notification-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  .notification-content {
+    flex-grow: 1;
+  }
+  .notification-text {
+    margin: 0;
+    font-size: 14px;
+  }
+  .notification-time {
+    font-size: 12px;
+    color: #65676B;
+    margin-top: 5px;
+  }
+  .notification-action {
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s;
+  }
+  .notification-action:hover {
+    background-color: #365899;
+  }
+  .unread {
+    background-color: #e7f3ff;
+  }
+  .unread:hover {
+    background-color: #d1e6ff;
+  }
+  .notification-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+</style>
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <div class="logo">SocialMesh</div>
+    </header>
+    <nav>
+      <a href="/home.html
+      <a href="/home/profile.html
+      <a href="/home/messages.html
+      <a href="/home/notifications.html
+    </nav>
+
+    <div class="notifications-container">
+      <div class="notification unread">
+        <img src="lisa.jpg" alt="lisa manoban's avatar" class="notification-avatar" width="50" height="50">
+        <div class="notification-content">
+          <p class="notification-text">
+            <svg class="notification-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4267B2">
+              <path d="M21.47 4.35l-1.34-.56v9.03l2.43-5.86c.41-1.02-.06-2.19-1.09-2.61zM1.97 8.05l6.93 6.93 5.47-5.47-5.47-5.47-5.47 5.47c-.39.39-.39 1.02 0 1.41l.89.89z"/>
+              <path d="M22.03 15.95L17.07 11l-5.47 5.47 5.47 5.47 4.96-4.96c.39-.39.39-1.02 0-1.41l-.89-.89zM8.9 13.47l-1.4-1.4-5.46 5.46-1.41-1.41 5.46-5.46-1.4-1.4-4.95 4.95c-.39.39-.39 1.02 0 1.41l2.82 2.82c.39.39 1.02.39 1.41 0l4.95-4.95zM15.1 10.53l1.4 1.4 5.46-5.46 1.41 1.41-5.46 5.46 1.4 1.4 4.95-4.95c.39-.39.39-1.02 0-1.41l-2.82-2.82c-.39-.39-1.02-.39-1.41 0l-4.95 4.95z"/>
+            </svg>
+            <strong>lisa manoban</strong> liked your post
+          </p>
+          <p class="notification-time">2 minutes ago</p>
+        </div>
+        <button class="notification-action">View Post</button>
+      </div>
+      <div class="notification">
+        <img src="daniel.jpg" alt="daniel padilla's avatar" class="notification-avatar" width="50" height="50">
+        <div class="notification-content">
+          <p class="notification-text">
+            <svg class="notification-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4267B2">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+            </svg>
+            <strong>daniel padilla</strong> sent you a friend request
+          </p>
+          <p class="notification-time">1 hour ago</p>
+        </div>
+        <button class="notification-action">Accept</button>
+      </div>
+      <div class="notification">
+        <img src="chie.jpg" alt="chie filomeno's avatar" class="notification-avatar" width="50" height="50">
+        <div class="notification-content">
+          <p class="notification-text">
+            <svg class="notification-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4267B2">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+            </svg>
+            <strong>chie filomeno</strong> commented on your post
+          </p>
+          <p class="notification-time">3 hours ago</p>
+        </div>
+        <button class="notification-action">Reply</button>
+      </div>
+      <div class="notification">
+        <img src="andrea.jpeg" alt="andrea's avatar" class="notification-avatar" width="50" height="50">
+        <div class="notification-content">
+          <p class="notification-text">
+            <svg class="notification-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4267B2">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+            </svg>
+            <strong>andrea</strong> mentioned you in a post
+          </p>
+          <p class="notification-time">Yesterday</p>
+        </div>
+        <button class="notification-action">View Post</button>
+      </div>
+      <div class="notification">
+        <img src="social.jfif" alt="SocialMesh Events avatar" class="notification-avatar" width="50" height="50">
+        <div class="notification-content">
+          <p class="notification-text">
+            <svg class="notification-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4267B2">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/>
+            </svg>
+            <strong>SocialMesh Events</strong> You have a new event invitation
+          </p>
+          <p class="notification-time">2 days ago</p>
+        </div>
+        <button class="notification-action">View Event</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const notifications = document.querySelectorAll('.notification');
+    
+    notifications.forEach(notification => {
+      const actionButton = notification.querySelector('.notification-action');
+      
+      actionButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        const action = e.target.textContent;
+        const notificationText = notification.querySelector('.notification-text').textContent;
+        
+        // Simulate action (in a real app, this would interact with the backend)
+        console.log(`Action "${action}" taken on notification: ${notificationText}`);
+        
+        // Remove 'unread' class if present
+        notification.classList.remove('unread');
+        
+        // Change button text to 'Viewed' or 'Accepted' based on the action
+        e.target.textContent = action === 'Accept' ? 'Accepted' : 'Viewed';
+        e.target.disabled = true;
+      });
+    });
+
+    // Simulate new notifications
+    setInterval(() => {
+      const newNotification = document.createElement('div');
+      newNotification.className = 'notification unread';
+      newNotification.innerHTML = `
+        <img src="https://socialmesh.app/avatars/random-user.jpg" alt="Random User's avatar" class="notification-avatar" width="50" height="50">
+        <div class="notification-content">
+          <p class="notification-text">
+            <svg class="notification-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4267B2">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+            </svg>
+            <strong>Random User</strong> started following you
+          </p>
+          <p class="notification-time">Just now</p>
+        </div>
+        <button class="notification-action">View Profile</button>
+      `;
+      
+      const notificationsContainer = document.querySelector('.notifications-container');
+      notificationsContainer.insertBefore(newNotification, notificationsContainer.firstChild);
+
+      // Add event listener to the new notification
+      const actionButton = newNotification.querySelector('.notification-action');
+      actionButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log('Viewed new user\'s profile');
+        newNotification.classList.remove('unread');
+        e.target.textContent = 'Viewed';
+        e.target.disabled = true;
+      });
+    }, 60000); // Add a new notification every minute
+  });
+  </script>
+</body></html>

@@ -1,0 +1,400 @@
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SocialMesh - Profile</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+  }
+  .app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  header {
+    background-color: #4267B2;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .nav-item {
+    text-decoration: none;
+    color: #4267B2;
+    font-weight: bold;
+  }
+  .nav-item.active {
+    border-bottom: 2px solid #4267B2;
+  }
+  .profile-header {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+  }
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .profile-info {
+    flex-grow: 1;
+  }
+  .profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .profile-bio {
+    color: #65676B;
+    margin-bottom: 10px;
+  }
+  .profile-stats {
+    display: flex;
+    gap: 20px;
+  }
+  .stat {
+    text-align: center;
+  }
+  .stat-value {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .stat-label {
+    color: #65676B;
+    font-size: 14px;
+  }
+  .content {
+    display: flex;
+    gap: 20px;
+  }
+  .main-content {
+    flex: 2;
+  }
+  .sidebar {
+    flex: 1;
+  }
+  .section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #4267B2;
+  }
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .photo-item {
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .photo-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .friend-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .friend-item {
+    text-align: center;
+  }
+  .friend-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
+  .friend-name {
+    font-size: 14px;
+    color: #4267B2;
+  }
+  .post {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+  }
+  .post:last-child {
+    border-bottom: none;
+  }
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .post-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .post-author {
+    font-weight: bold;
+  }
+  .post-timestamp {
+    font-size: 0.8em;
+    color: #65676B;
+    margin-left: 10px;
+  }
+  .post-content {
+    margin-bottom: 10px;
+  }
+  .post-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  .post-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  .action-btn {
+    background: none;
+    border: none;
+    color: #4267B2;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .action-btn svg {
+    margin-right: 5px;
+  }
+</style>
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <div class="logo">SocialMesh</div>
+    </header>
+    <nav>
+      <a href="home.html
+      <a href="home.html
+      <a href="/home/messages.html
+      <a href="/home/notifications.html
+    </nav>
+
+    <div class="profile-header">
+      <img src="kath.jpg" alt="Richelyn Maternum's profile picture" class="profile-picture" width="150" height="150">
+      <div class="profile-info">
+        <h1 class="profile-name">Richelyn Maternum</h1>
+        <p class="profile-bio">Software developer, coffee enthusiast, and amateur photographer. Always learning, always growing.</p>
+        <div class="profile-stats">
+          <div class="stat">
+            <div class="stat-value">1,234</div>
+            <div class="stat-label">Friends</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">567</div>
+            <div class="stat-label">Posts</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">890</div>
+            <div class="stat-label">Photos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="main-content">
+        <div class="section">
+          <h2 class="section-title">Recent Posts</h2>
+          <div class="post">
+            <div class="post-header">
+              <img src="kath.jpg" alt="Richelyn Maternum's avatar" class="post-avatar" width="40" height="40">
+              <span class="post-author">Richelyn Maternum</span>
+              <span class="post-timestamp">2 hours ago</span>
+            </div>
+            <div class="post-content">
+              Just finished a challenging coding project. It's amazing how much you can learn when you push yourself out of your comfort zone! 💻🚀 #CodingLife #NeverStopLearning
+            </div>
+            <div class="post-actions">
+              <button class="action-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                </svg>
+                Like
+              </button>
+              <button class="action-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                Comment
+              </button>
+              <button class="action-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="18" cy="5" r="3"></circle>
+                  <circle cx="6" cy="12" r="3"></circle>
+                  <circle cx="18" cy="19" r="3"></circle>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+                Share
+              </button>
+            </div>
+          </div>
+          <div class="post">
+            <div class="post-header">
+              <img src="kath.jpg" alt="Richelyn Maternum's avatar" class="post-avatar" width="40" height="40">
+              <span class="post-author">Richelyn Maternum</span>
+              <span class="post-timestamp">1 day ago</span>
+            </div>
+            <div class="post-content">
+              Beautiful sunset at the beach today. Sometimes you need to step away from the screen and appreciate nature's beauty. 🌅
+            </div>
+            <img src="sunset.jfif" alt="Stunning beach sunset with orange sky and silhouette of palm trees" class="post-image" width="100%" height="auto">
+            <div class="post-actions">
+              <button class="action-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                </svg>
+                Like
+              </button>
+              <button class="action-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                Comment
+              </button>
+              <button class="action-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="18" cy="5" r="3"></circle>
+                  <circle cx="6" cy="12" r="3"></circle>
+                  <circle cx="18" cy="19" r="3"></circle>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+                Share
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="section">
+          <h2 class="section-title">Photos</h2>
+          <div class="photo-grid">
+            <div class="photo-item">
+              <img src="cup.jfif" alt="Coffee cup on a wooden table" width="100" height="100">
+            </div>
+            <div class="photo-item">
+              <img src="code.jfif" alt="Laptop with code on screen" width="100" height="100">
+            </div>
+            <div class="photo-item">
+              <img src="mountain.jfif" alt="Mountain landscape" width="100" height="100">
+            </div>
+            <div class="photo-item">
+              <img src="city lights.jpeg" alt="City skyline at night" width="100" height="100">
+            </div>
+            <div class="photo-item">
+              <img src="book.jpg" alt="Books stacked on a desk" width="100" height="100">
+            </div>
+            <div class="photo-item">
+              <img src="lens.jpeg" alt="Closeup of a camera lens" width="100" height="100">
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <h2 class="section-title">Friends</h2>
+          <div class="friend-list">
+            <div class="friend-item">
+              <img src="zeinab.jpg" alt="zeinab avatar" class="friend-avatar" width="80" height="80">
+              <div class="friend-name">zeinab</div>
+            </div>
+            <div class="friend-item">
+              <img src="chie.jpg" alt="chie filomeno's avatar" class="friend-avatar" width="80" height="80">
+              <div class="friend-name">chie filomeno</div>
+            </div>
+            <div class="friend-item">
+              <img src="angeli.jpg" alt="angeli's avatar" class="friend-avatar" width="80" height="80">
+              <div class="friend-name">angeli</div>
+            </div>
+            <div class="friend-item">
+              <img src="wawix.jfif" alt="Alex Turner's avatar" class="friend-avatar" width="80" height="80">
+              <div class="friend-name">Alex Turner</div>
+            </div>
+            <div class="friend-item">
+              <img src="lisa.jpg" alt="lisa manoban's avatar" class="friend-avatar" width="80" height="80">
+              <div class="friend-name">Lisa manoban</div>
+            </div>
+            <div class="friend-item">
+              <img src="daniel.jpg" alt="daniel's avatar" class="friend-avatar" width="80" height="80">
+              <div class="friend-name">daniel</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Add hover effect to photos
+    const photoItems = document.querySelectorAll('.photo-item');
+    photoItems.forEach(item => {
+      item.addEventListener('mouseover', () => {
+        item.style.transform = 'scale(1.05)';
+        item.style.transition = 'transform 0.3s ease';
+      });
+      item.addEventListener('mouseout', () => {
+        item.style.transform = 'scale(1)';
+      });
+    });
+
+    // Add click event to action buttons
+    const actionButtons = document.querySelectorAll('.action-btn');
+    actionButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const action = button.textContent.trim();
+        alert(`You clicked the ${action} button!`);
+      });
+    });
+
+    // Simulate real-time updates
+    setInterval(() => {
+      const stats = document.querySelectorAll('.stat-value');
+      stats.forEach(stat => {
+        const currentValue = parseInt(stat.textContent);
+        const newValue = currentValue + Math.floor(Math.random() * 3);
+        stat.textContent = newValue;
+        stat.style.color = '#4267B2';
+        setTimeout(() => {
+          stat.style.color = 'inherit';
+        }, 500);
+      });
+    }, 5000);
+  });
+  </script>
+</body></html>

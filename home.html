@@ -1,0 +1,414 @@
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SocialMesh - Home</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+  }
+  .app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  header {
+    background-color: #4267B2;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .nav-item {
+    text-decoration: none;
+    color: #4267B2;
+    font-weight: bold;
+  }
+  .nav-item.active {
+    border-bottom: 2px solid #4267B2;
+  }
+  .content {
+    display: flex;
+    margin-top: 20px;
+  }
+  .feed {
+    flex: 2;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .sidebar {
+    flex: 1;
+    margin-left: 20px;
+  }
+  .post {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+  }
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .post-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .post-author {
+    font-weight: bold;
+  }
+  .post-timestamp {
+    font-size: 0.8em;
+    color: #65676B;
+    margin-left: 10px;
+  }
+  .post-content {
+    margin-bottom: 10px;
+  }
+  .post-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  .post-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  .action-btn {
+    background: none;
+    border: none;
+    color: #4267B2;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .action-btn svg {
+    margin-right: 5px;
+  }
+  .create-post {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .create-post textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .create-post button {
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .trending {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .trending-item {
+    margin-bottom: 10px;
+  }
+  .trending-hashtag {
+    font-weight: bold;
+    color: #4267B2;
+  }
+  .trending-count {
+    font-size: 0.8em;
+    color: #65676B;
+  }
+  .stories {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  .story {
+    width: 120px;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .story-author {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+  }
+</style>
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <div class="logo">SocialMesh</div>
+    </header>
+    <nav>
+      <a href="/home.html
+      <a href="/profile.html
+      <a href="/messages.html
+      <a href="/notifications.html
+    </nav>
+    <div class="content">
+      <div class="feed">
+        <div class="stories">
+          <div class="story" style="background-image: url('kath.jpg')">
+            <div class="story-author">Your Story</div>
+          </div>
+          <div class="story" style="background-image: url('daniel.jpg')">
+            <div class="story-author">daniel padilla</div>
+          </div>
+          <div class="story" style="background-image: url('angeli.jpg')">
+            <div class="story-author">angeli</div>
+          </div>
+          <div class="story" style="background-image: url('lisa.jpg')">
+            <div class="story-author">lisa manoban</div>
+          </div>
+        </div>
+        <div class="create-post">
+          <textarea placeholder="What's on your mind?"></textarea>
+          <button>Post</button>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <img src="kath.jpg" alt="User avatar" class="post-avatar" width="40" height="40">
+            <span class="post-author">kathyy</span>
+            <span class="post-timestamp">2 hours ago</span>
+          </div>
+          <div class="post-content">
+            Just finished a 5K run! Personal best time. Feeling accomplished! 🏃‍♀️💪
+          </div>
+          <img src="run.jpg" alt="Person finishing a run" class="post-image" width="100%" height="auto">
+          <div class="post-actions">
+            <button class="action-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+              </svg>
+              Like
+            </button>
+            <button class="action-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+              Comment
+            </button>
+            <button class="action-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="18" cy="5" r="3"></circle>
+                <circle cx="6" cy="12" r="3"></circle>
+                <circle cx="18" cy="19" r="3"></circle>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+              </svg>
+              Share
+            </button>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <img src="chie.jpg" alt="User avatar" class="post-avatar" width="40" height="40">
+            <span class="post-author">chie girl</span>
+            <span class="post-timestamp">5 hours ago</span>
+          </div>
+          <div class="post-content">
+            Just tried this amazing new café downtown. The latte art was incredible! ☕️🎨
+          </div>
+          <img src="coffee.jfif" alt="Latte with intricate foam art" class="post-image" width="100%" height="auto">
+          <div class="post-actions">
+            <button class="action-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+              </svg>
+              Like
+            </button>
+            <button class="action-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+              Comment
+            </button>
+            <button class="action-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="18" cy="5" r="3"></circle>
+                <circle cx="6" cy="12" r="3"></circle>
+                <circle cx="18" cy="19" r="3"></circle>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+              </svg>
+              Share
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="trending">
+          <h3>Trending Topics</h3>
+          <div class="trending-item">
+            <span class="trending-hashtag">#SummerVibes</span>
+            <span class="trending-count">23.5K posts</span>
+          </div>
+          <div class="trending-item">
+            <span class="trending-hashtag">#TechNews</span>
+            <span class="trending-count">18.2K posts</span>
+          </div>
+          <div class="trending-item">
+            <span class="trending-hashtag">#HealthyLiving</span>
+            <span class="trending-count">15.7K posts</span>
+          </div>
+          <div class="trending-item">
+            <span class="trending-hashtag">#BookLovers</span>
+            <span class="trending-count">12.3K posts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  (function() {
+    'use strict';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const createPostBtn = document.querySelector('.create-post button');
+      const postTextarea = document.querySelector('.create-post textarea');
+      const feed = document.querySelector('.feed');
+
+      if (!createPostBtn || !postTextarea || !feed) {
+        console.error('Required elements not found');
+        return;
+      }
+
+      createPostBtn.addEventListener('click', () => {
+        try {
+          const postContent = postTextarea.value.trim();
+          if (postContent) {
+            const newPost = document.createElement('div');
+            newPost.className = 'post';
+            newPost.innerHTML = `
+              <div class="post-header">
+                <img src="https://socialmesh.app/avatars/me.jpg" alt="My avatar" class="post-avatar" width="40" height="40">
+                <span class="post-author">Me</span>
+                <span class="post-timestamp">Just now</span>
+              </div>
+              <div class="post-content">${postContent}</div>
+              <div class="post-actions">
+                <button class="action-btn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                  </svg>
+                  Like
+                </button>
+                <button class="action-btn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                  Comment
+                </button>
+                <button class="action-btn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="18" cy="5" r="3"></circle>
+                    <circle cx="6" cy="12" r="3"></circle>
+                    <circle cx="18" cy="19" r="3"></circle>
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                  </svg>
+                  Share
+                </button>
+              </div>
+            `;
+            feed.insertBefore(newPost, feed.children[2]);
+            postTextarea.value = '';
+          }
+        } catch (error) {
+          console.error('Error creating post:', error);
+        }
+      });
+
+      // Simulate real-time updates
+      setInterval(() => {
+        try {
+          const randomFriend = ['Alice', 'Bob', 'Charlie', 'David', 'Eva'][Math.floor(Math.random() * 5)];
+          const randomContent = [
+            'Just discovered an amazing new hiking trail! 🏞️',
+            'Cooking up a storm in the kitchen tonight! 👨‍🍳',
+            'Finally finished that book I\'ve been reading. Highly recommend! 📚',
+            'Adopted a new puppy today! Meet Max! 🐶',
+            'Scored tickets to the concert of the year! Can\'t wait! 🎵'
+          ][Math.floor(Math.random() * 5)];
+
+          const newPost = document.createElement('div');
+          newPost.className = 'post';
+          newPost.innerHTML = `
+            <div class="post-header">
+              <img src="andrea.jpeg" alt="${randomFriend}'s avatar" class="post-avatar" width="40" height="40">
+              <span class="post-author">${randomFriend}</span>
+              <span class="post-timestamp">Just now</span>
+            </div>
+            <div class="post-content">${randomContent}</div>
+            <div class="post-actions">
+              <button class="action-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                </svg>
+                Like
+              </button>
+              <button class="action-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                Comment
+              </button>
+              <button class="action-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="18" cy="5" r="3"></circle>
+                  <circle cx="6" cy="12" r="3"></circle>
+                  <circle cx="18" cy="19" r="3"></circle>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+                Share
+              </button>
+            </div>
+          `;
+          feed.insertBefore(newPost, feed.children[Math.floor(Math.random() * 3) + 2]);
+
+          if (feed.children.length > 10) {
+            feed.removeChild(feed.lastElementChild);
+          }
+        } catch (error) {
+          console.error('Error adding random post:', error);
+        }
+      }, 30000); // Add a new post every 30 seconds
+    });
+  })();
+  </script>
+</body></html>
